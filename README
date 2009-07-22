@@ -1,0 +1,39 @@
+The Enigma Curry Network Sniffer
+Copyright (C) 2006 Ryan McGuire
+ryan@enigma***curry.com (remove ***)
+www.EnigmaCurry.com
+
+This is version 0.6
+
+run 'ecsniff.py -h' for help
+
+---------------------------------------------------------------------
+Please read the LICENSE.
+
+This code is educational for me. It teaches me several things
+about TCP/IP. This is my intent for you as well. I claim no
+responsibility for what you will do with this program. Although
+I cannot stop someone from doing something malicious with this
+software, I do hope, that by it's existance, a general awareness
+of the problems with insecure protocols will proliferate.
+---------------------------------------------------------------------
+
+Requirements:
+  *Python 2.4  - http://www.python.org
+    (not tested on anything else)
+  *Pylibpcap   - http://sourceforge.net/projects/pylibpcap/
+  *Libpcap     - http://sourceforge.net/projects/libpcap/
+    --or--
+  *Winpcap     - http://www.winpcap.org/
+
+Changelog:
+  version 0.6 :
+    added MSN messenger instant message logging
+    added HTTP page access logging
+    added FTP username and password logging
+          (It's the same as POP3, so I combined the functions)
+    added Subnet filtering (aka 'Don't log other people's business')
+  version 0.5 :
+    Log pop3 email usernames and passwords
+    Log http basic authentication usernames and passwords
+    Log everything to a file or write to stdout
